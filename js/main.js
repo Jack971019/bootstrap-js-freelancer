@@ -30,8 +30,18 @@ sendButton.addEventListener("click", function (event) {
     for (let i = 0; i < arrayDiscountCodes.length; i++) {
         if (arrayDiscountCodes[i] == discountcode) {
             discountpresent = true;
+            
         }
+
+
     }
+
+    if ((discountcode != "") && !discountpresent) {
+        alert("il codice inserito non è valido");
+
+        document.getElementById("discount_code").classList.add("text-danger");
+    }
+
     if (discountpresent) {
         finalPrice = finalPrice * 0.75;
     }
