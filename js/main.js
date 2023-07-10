@@ -37,7 +37,7 @@ sendButton.addEventListener("click", function (event) {
     }
     finalPrice = finalPrice.toFixed(2);
 
-    document.getElementById("final_price").innerHTML = "Il prezzo è di: " + finalPrice + "$";
+    document.getElementById("final_price").innerHTML = "Il prezzo è di: " + finalPrice + "€";
 
 
 
