@@ -13,8 +13,8 @@ sendButton.addEventListener("click", function (event) {
 
     let hoursrequested = parseInt(document.getElementById("formGroupExampleInput2").value);
     let typeofwork = parseInt(document.getElementById("type_of_work").value);
-    let discountcode = document.getElementById("formGroupExampleInput").value;
-
+    let discountcode = document.getElementById("discount_code").value;
+    console.log(discountcode);
     let finalPrice = 0
 
     if (typeofwork == "1") {
