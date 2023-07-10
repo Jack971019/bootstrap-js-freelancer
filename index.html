@@ -142,9 +142,9 @@
                             placeholder="name@example.com">
                     </div>
 
-                    <p class="mt-0 mb-2">select</p>
+                    <p class="mt-0 mb-2">select type of work</p>
 
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" id="type_of_work" aria-label="Default select example">
                         <option selected>Scegli il tipo di lavoro</option>
                         <option value="1">sviluppo backend</option>
                         <option value="2">sviluppo frontend</option>
@@ -160,12 +160,12 @@
                             placeholder="enter your last name...">
                     </div>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label">hours requested</label>
+                        <label for="formGroupExampleInput2" id="hours_requested" class="form-label">hours requested</label>
                         <input type="text" class="form-control" id="formGroupExampleInput2"
                             placeholder="hours requested">
                     </div>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput" class="form-label">discount code</label>
+                        <label for="formGroupExampleInput" id="discount_code" class="form-label">discount code</label>
                         <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
                     </div>
 
@@ -184,7 +184,7 @@
                         <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                             style="height: 100px"></textarea>
                         <label for="floatingTextarea2">specify your work commission...</label>
-                        <button type="button" class="btn btn-warning my-5">send</button>
+                        <button type="button" id="send_button"  class="btn btn-warning my-5">send</button>
                     </div>
                 </div>
 
