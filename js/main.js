@@ -1,12 +1,13 @@
 
 let arrayDiscountCodes = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
+let sendButton = document.getElementById("send_button");
 
 
 
-function workprice() {
-    document.getElementById("send_button").addEventListener("click", function () {
+    sendButton.addEventListener("click", function (event) {
+        event.preventDefault();
 
-    });
+    
 
     document.getElementById("formGroupExampleInput").value
 
@@ -16,11 +17,11 @@ function workprice() {
 
     let finalPrice = 0
 
-    if (typeofwork = "1") {
+    if (typeofwork == "1") {
         finalPrice = 20.5 * hoursrequested;
-    } if (typeofwork = "2") {
+    }  else if (typeofwork == "2") {
         finalPrice = 15.3 * hoursrequested;
-    } if (typeofwork = "3") {
+    }  else if (typeofwork == "3") {
         finalPrice = 33.6 * hoursrequested;
     }
 
@@ -34,5 +35,8 @@ function workprice() {
 
     finalPrice = finalPrice.toFixed(2);
 
-document.getElementById("final_price").innerHTML = "Il prezzo è di: " + finalPrice;
-}
+    document.getElementById("final_price").innerHTML = "Il prezzo è di: " + finalPrice + "$";
+
+
+
+})
